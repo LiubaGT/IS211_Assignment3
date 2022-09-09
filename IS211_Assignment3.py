@@ -47,12 +47,12 @@ def process_data():
         'IE': ie
     }
 
-    # Task III
+    # Task 3
     row_count = sum(1 for row in csv.reader(open('weblog.csv')))
     math = 100*count_images/row_count
     print("Image requests account for {} of all requests".format(math))
 
-    # Task IV
+    # Task 4
     popular_browser = max(browsers, key=browsers.get)
     print("The most popular browser was {}".format(popular_browser))
 
